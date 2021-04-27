@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 [![GitHub Downloads](https://img.shields.io/github/downloads/SINTEFMedtek/GSI-RADS/total?label=GitHub%20downloads&logo=github)](https://github.com/SINTEFMedtek/GSI-RADS/releases)
 
-![GUI](GIS-RADS_illustration.png)
+<img src="GIS-RADS_illustration.png" width="70%" height="70%">
 
 ## 1. Description
 The repository contains the software to automatically compute glioblastoma's features from a T1-wighted MRI pre-operative MRI,
