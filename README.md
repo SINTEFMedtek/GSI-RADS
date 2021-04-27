@@ -19,7 +19,7 @@ Please cite the following article if you have used our software in one of your s
 
 ## 2. Softwares and usage
 An executable is provided for the three main Operating Systems: Windows 10 (64-bit), macOS (>= high sierra), and Ubuntu Linux 18.04.
-The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-RADS/releases) (see under **Assets**). It might take a few seconds to start. On macOS it can take up to a minute. This is because the software has to be unpackaged at runtime, and typically operating systems have to run anti-virus checks on the unpackaged content, before being executed. We will look into how to improve this in future work.
+The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-RADS/releases) (see under **Assets**). It might take up to a minute to start. This is because the software has to be unpackaged at runtime. Some operating systems run an anti-virus check when unpackaging content. On Windows this is called **real-time protection**. We will look into how to solve this issue in the near future.
 
 ### 2.1 Download and installation  
 Download the executable to your Operating System.  
