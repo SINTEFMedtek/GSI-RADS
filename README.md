@@ -18,7 +18,7 @@ Please cite the following article if you have used our software in one of your s
 `}`
 
 ## 2. Softwares and usage
-An executable is provided for the three main Operating Systems: Windows 10 (64-bit), macOS (>= high sierra), and Ubuntu Linux 18.04.
+An executable is provided for the three main Operating Systems: Windows 10 (64-bit), macOS (>= High Sierra), and Ubuntu Linux 18.04.
 The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-RADS/releases) (see under **Assets**). 
 
 ### 2.1 Download and installation  
