@@ -1,6 +1,7 @@
 # Glioblastoma Surgery Imaging - Reporting And Data System (GSI-RADS)
-- - -
+============
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
+[![GitHub Downloads](https://img.shields.io/github/downloads/SINTEFMedtek/GSI-RADS/total?label=GitHub%20downloads&logo=github)](https://github.com/SINTEFMedtek/GSI-RADS/releases)
 
 ![GUI](GIS-RADS_illustration.png)
 
