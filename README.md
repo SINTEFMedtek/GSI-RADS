@@ -1,6 +1,8 @@
 # Glioblastoma Surgery Imaging - Reporting And Data System (GSI-RADS)
 - - -
 
+![GUI](GIS-RADS_illustration.png)
+
 ## 1. Description
 The repository contains the software to automatically compute glioblastoma's features from a T1-wighted MRI pre-operative MRI,
 and report them in a standardized manner, as originally introduced in the article below-mentionned.
