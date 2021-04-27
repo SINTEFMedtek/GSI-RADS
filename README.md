@@ -3,7 +3,7 @@
 
 ## 1. Description
 The repository contains the software to automatically compute glioblastoma's features from a T1-wighted MRI pre-operative MRI,
-and report them in a standardized manner, as originally introduced in the article below-mentionned.  
+and report them in a standardized manner, as originally introduced in the article below-mentionned.
 
 Please cite the following article if you have used our software in one of your studies:
 >`@article{,`  
@@ -14,11 +14,12 @@ Please cite the following article if you have used our software in one of your s
 `}`
 
 ## 2. Softwares and usage
-An executable is provided for the three main Operating Systems: Windows 10, Mac (version?), and Ubuntu 18.04.  
+An executable is provided for the three main Operating Systems: Windows 10, macOS (>= high sierra), and Ubuntu Linux 18.04.
+The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-RADS/releases). It might take a few seconds to start. On macOS it can take up to a minute.
 
 ### 2.1 Download and installation  
-Download and unzip the archive corresponding to your Operating System.  
-Double-click/execute the file named ?.
+Download the executable to your Operating System.  
+Double-click/execute the file named GSI-RADS.
 
 ### 2.2 Usage  
   1) Click 'Input MRI...' to select from your file explorer the MRI scan to process (unique file).  
@@ -41,5 +42,3 @@ The following features are automatically computed and reported to the user:
 - **Resectability**: expected resectbale and residual volumes (in ml), and resection index.  
 - **Subcortical structures**: percentage of the tumor volume overlapping each structure from the MNI atlas, the Hard-Oxford atlas, and Schaefer atlas.  
 - **White matter tracts**: percentage of the tumor volume overlapping each tract from the BrainLab atlas. If no overlap, the minimum distance to the tract is provided (in mm).  
-
-## 4. 
