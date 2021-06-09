@@ -11,6 +11,8 @@ and report them in a standardized manner.
 
 The software was introduced in the published article "Glioblastoma Surgery Imaging—Reporting and Data System: Standardized Reporting of Tumor Volume, Location, and Resectability Based on Automated Segmentations", of which the article is open access and can be downloaded from here: https://www.mdpi.com/2072-6694/13/12/2854
 
+The manual segmentation data can be found as a publicly archived dataset (https://doi.org/10.17026/dans-xam-j5aw). The data and statistics code for analysis can be found as a public archive (https://gitlab.com/picture/gsi-rads).
+
 Please, cite the following article if you have used our software in one of your studies:
 ```
 @ARTICLE{cancers13122854,
