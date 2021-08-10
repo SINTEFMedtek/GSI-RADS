@@ -2,6 +2,7 @@
 
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 [![GitHub Downloads](https://img.shields.io/github/downloads/SINTEFMedtek/GSI-RADS/total?label=GitHub%20downloads&logo=github)](https://github.com/SINTEFMedtek/GSI-RADS/releases)
+[![Paper](https://zenodo.org/badge/DOI/10.1038/s41598-017-17204-5.svg)](https://doi.org/10.3390/cancers13122854)
 
 ![GSI-RADS](images/GSI-RADS_illustration.png)
 
@@ -54,7 +55,6 @@ On **Windows** and **Ubuntu Linux** the software may be slow to start as it need
        * The cortical structures mask in original patient space for the different atlases used.  
        * The input volume and tumor segmentation mask in MNI space in the sub-directory named \'registration\'.  
 
-
 ### 2.3 Computed features  
 The following features are automatically computed and reported to the user:
 - **Multifocality**: whether the tumor is multifocal or not, the total number of foci, and the largest minimum distance between two foci.  
@@ -79,7 +79,6 @@ Then, to download the trained models locally, run the following:
 > python setup.py  
 > deactivate  
 
-
 ### 3.2 Usage
 The command line input parameters are:
 * -g [--use_gui]: Must be set to 0 to disable the gui, otherwise 1.
@@ -87,7 +86,6 @@ The command line input parameters are:
 * (optional) -s [--input_tumor_segmentation_filename]: Complete path to the corresponding tumor mask, to avoid re-segmentation.
 * -o [--output_folder]: Main destination directory. A unique timestamped folder will be created inside for each run.
 * -d [--gpu_id]: Number of the GPU to use for the segmentation task. Set the value to -1 to run on CPU.
-
 
 To run directly from command line, without the use of the GUI, run the following:
 > source venv/bin/activate  
