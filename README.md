@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 [![GitHub Downloads](https://img.shields.io/github/downloads/SINTEFMedtek/GSI-RADS/total?label=GitHub%20downloads&logo=github)](https://github.com/SINTEFMedtek/GSI-RADS/releases)
 
-<img src="GIS-RADS_illustration.png" width="70%" height="70%">
+<img src="/home/dbouget/Documents/Code/Public/GSI-RADS/images/GIS-RADS_illustration.png" width="70%" height="70%">
 
 ## 1. Description
 The repository contains the software to automatically compute glioblastoma's features from a T1-wighted MRI pre-operative MRI,
@@ -54,15 +54,45 @@ The software may appear unresponsive when running analysis.
   NOTE: The output folder is populated automatically with the following:  
        * The diagnosis results in human-readable text (report.txt) and Excel-ready format (report.csv).  
        * The automatic segmentation masks of the brain and the tumor in the original patient space (input_brain_mask.nii.gz and input_tumor_mask.nii.gz).  
-       * The anatomical structures mask in original patient space (input_anatomical_regions_mask.nii.gz).  
+       * The cortical structures mask in original patient space for the different atlases used.  
        * The input volume and tumor segmentation mask in MNI space in the sub-directory named \'registration\'.  
 
 
-## 3. Computed features  
+### 2.3 Computed features  
 The following features are automatically computed and reported to the user:
 - **Multifocality**: whether the tumor is multifocal or not, the total number of foci, and the largest minimum distance between two foci.  
 - **Volume**: total tumor volume in original patient space and MNI space (in ml).  
 - **Laterality**: tumor percentage in each hemisphere, and assessment of midline crossing.  
-- **Resectability**: expected resectbale and residual volumes (in ml), and resection index.  
-- **Subcortical structures**: percentage of the tumor volume overlapping each structure from the MNI atlas, the Hard-Oxford atlas, and Schaefer atlas.  
-- **White matter tracts**: percentage of the tumor volume overlapping each tract from the BrainLab atlas. If no overlap, the minimum distance to the tract is provided (in mm).  
+- **Resectability**: expected residual volumes (in ml) and resection index.  
+- **Cortical structures**: percentage of the tumor volume overlapping each structure from the MNI atlas, the Harvard-Oxford atlas, and Schaefer atlas (version 7 and 17).  
+- **Subcortical structures**: percentage of the tumor volume overlapping each structure from the BCB atlas. If no overlap, the minimum distance to the structure is provided (in mm).  
+
+## 3. Source code usage
+
+### 3.1 Installation
+Use the requirements.txt file to create a virtual environment with the required libraries.
+> virtualenv -p python3 venv  
+> cd venv    
+> source bin/activate  
+> pip install -r ../requirements.txt  
+> deactivate  
+
+Then, to download the trained models locally, run the following:
+> source venv/bin/activate  
+> python setup.py  
+> deactivate  
+
+
+### 3.2 Usage
+The command line input parameters are:
+* -g [--use_gui]: Must be set to 0 to disable the gui, otherwise 1.
+* -i [--input_filename]: Complete path to the MRI volume to process.
+* (optional) -s [--input_tumor_segmentation_filename]: Complete path to the corresponding tumor mask, to avoid re-segmentation.
+* -o [--output_folder]: Main destination directory. A unique timestamped folder will be created inside for each run.
+* -d [--gpu_id]: Number of the GPU to use for the segmentation task. Set the value to -1 to run on CPU.
+
+
+To run directly from command line, without the use of the GUI, run the following:
+> source venv/bin/activate  
+> python main.py -g 0 -i /path/to/volume/T1.nii.gz -o /path/to/output/ -d 0  
+> deactivate  
