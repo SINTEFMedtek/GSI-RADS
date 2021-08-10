@@ -32,4 +32,5 @@ ANTs/
 GSI-RADS
 quickpkg/
 *.nii.gz
+*.nii
 resources/models/
