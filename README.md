@@ -29,20 +29,17 @@ DOI = {10.3390/cancers13122854}}
 ```
 
 ## 2. Softwares and usage
-An executable is provided for the three main Operating Systems: Windows 10 (64-bit), macOS (>= High Sierra), and Ubuntu Linux 18.04.
+An installer is provided for the three main Operating Systems: Windows (v10, 64-bit), macOS (>= High Sierra), and Ubuntu Linux (>= 18.04).
 The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-RADS/releases) (see **Assets**). 
 
-### 2.1 Download and installation  
+### 2.1 Download and installation
 These steps are only needed to do once:
-1) Download the executable to your Operating System.  
-2) On macOS/Ubuntu only: Open terminal, write `chmod +x `, drag and drop the file into the terminal window, and click Enter, to enable running program as executable.
-3) Right-click and open to execute the file named GSI-RADS.
+1) Download the installer to your Operating System.
+2) Double click downloaded file and follow instructions to install.
+3) Search for the software "GSI-RADS" and double click to run.
 
-Then for all future use, simply double-click to launch the software.
-
-**GSI-RADS might take up to a minute to start.** This is because the software has to be unpackaged at runtime. Some operating systems run an anti-virus check when unpackaging content. On Windows this is called **real-time protection**. This further slows down the unpackaging process. We will look into how to solve this issue in the near future.
-
-The software may appear unresponsive when running analysis.
+On **macOS** the software may be slow to start **the first time**, due to the firewall checking the software. Otherwise, the GUI should pop up instantly.
+On **Windows** and **Ubuntu Linux** the software may be slow to start as it needs to unpackage the software every time. This has been solved for macOS and will be solved for the two other operating sytems in the near future.
 
 ### 2.2 Usage  
   1) Click 'Input MRI...' to select from your file explorer the MRI scan to process (unique file).  
