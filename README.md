@@ -35,7 +35,7 @@ The software can be downloaded from [here](https://github.com/SINTEFMedtek/GSI-R
 ### 2.1 Download and installation
 These steps are only needed to do once:
 1) Download the installer to your Operating System.
-2) Double click downloaded file and follow instructions to install.
+2) Right click the downloaded file, click "open", and follow the instructions to install.
 3) Search for the software "GSI-RADS" and double click to run.
 
 On **macOS** the software may be slow to start **the first time**, due to the firewall checking the software. Otherwise, the GUI should pop up instantly.
