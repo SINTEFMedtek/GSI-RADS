@@ -4,6 +4,8 @@
 [![GitHub Downloads](https://img.shields.io/github/downloads/SINTEFMedtek/GSI-RADS/total?label=GitHub%20downloads&logo=github)](https://github.com/SINTEFMedtek/GSI-RADS/releases)
 [![Paper](https://zenodo.org/badge/DOI/10.1038/s41598-017-17204-5.svg)](https://doi.org/10.3390/cancers13122854)
 
+⚠️***DEPRECATED: This project has been merged into [Raidionics](https://github.com/dbouget/Raidionics), and will no longer be actively maintained. Please, use Raidionics instead.***
+
 ![GSI-RADS](images/GSI-RADS_illustration.png)
 
 ## 1. Description
